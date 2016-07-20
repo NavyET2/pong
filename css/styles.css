@@ -1,0 +1,11 @@
+.col-md-3 {
+  float: none;
+  background-color: orange;
+  display: inline-block;
+  margin-top: 75px;
+  border: 5px solid tan;
+}
+
+/*.userSubmit {
+  onClick = "this.style.visibility= 'hidden';" --obsolete
+}*/
