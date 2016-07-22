@@ -1,4 +1,4 @@
-## Ping Pong 0.1!
+## Ping Pong 0.2!
 Ping Pong Array project!
 
 ## Features
@@ -41,7 +41,7 @@ __Example Output__: 1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 1
 
 
 ## Known Bugs
-- On second submit click, originally the button would append atop the array already in the HTML DOM. .one added in scripts.js to combat this. The second click on submit button now refreshes the page. The problem is though, when the button is pressed without a number in the form, the second click on submit refreshes the page, making the code look grossly unresponsive as nothing in the HTML DOM changes. 
+- On second submit click, originally the button would append atop the array already in the HTML DOM. .one added in scripts.js to combat this. The second click on submit button now refreshes the page. The problem is though, when the button is pressed without a number in the form, the second click on submit refreshes the page, making the code look grossly unresponsive as nothing in the HTML DOM changes.
 
 ## Author
 Scott Scholz
