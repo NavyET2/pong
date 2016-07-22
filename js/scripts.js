@@ -16,13 +16,14 @@ function pingPong(input) { //creating function pingPong. input is a variable tha
   }
 }
 
+//front-end logic
 $(document).ready(function() {
   $("form#game").one( "submit", function(event) { //calls upon form "game" in index.html. activated with submit function from game form. one only allows one run though of game submit instead of appending multiple instances of pong array.
     event.preventDefault(); //stops the page from refreshing after form submit execution
-    // var reload = parse($(location.reload(true)));
+    // var reload = parse($(location.reload(true))); obsolete for now
     var input = parseInt($("input#userInput").val()); //sets the variable input to that of the integer inputted from input id userInput in index.html
     pingPong(input); //variable input from user input in game form is executed while calling upon the the function pingPong from the business logic
-    for (var list = 0; list < outputNumbers.length; list ++) { //calls upon length of string outputNumbers, increment
+    for (var list = 0; list < outputNumbers.length; list ++) {
       $("ul#outputNumbers").append("<ul>" + outputNumbers[list] + "</ul>"); //outputNumbers overrides list in array sections where pingpong, ping and pong are present. appends list into the unordered list id outputNumbers in index.html
     }
 
