@@ -17,6 +17,9 @@ function pingPong(input) { //creating function pingPong. input is a variable tha
 }
 
 //front-end logic
+
+$(this).prop("disabled",true); // disables "Compute!" button after click. In Chrome browser it didn't work inside the document-ready-form-function below.
+
 $(document).ready(function() {
   $("form#game").one( "submit", function(event) { //calls upon form "game" in index.html. activated with submit function from game form. one only allows one run though of game submit instead of appending multiple instances of pong array.
     event.preventDefault(); //stops the page from refreshing after form submit execution
@@ -26,6 +29,10 @@ $(document).ready(function() {
     for (var list = 0; list < outputNumbers.length; list ++) {
       $("ul#outputNumbers").append("<ul>" + outputNumbers[list] + "</ul>"); //outputNumbers overrides list in array sections where pingpong, ping and pong are present. appends list into the unordered list id outputNumbers in index.html
     }
+
+    // $("#buttonid").on("click", function() {
+    //   $(this).prop("disabled", true);
+    // }); // *save for experimetation*
 
     console.log(outputNumbers); //outputs array in console log. added for troubleshooting purposes
     // alert(outputNumbers); //only if you want to see it unformatted and ugly in an alert
