@@ -1,4 +1,4 @@
-## Ping Pong 0.2!
+## Ping Pong 0.3!
 Ping Pong Array project!
 
 ## Features
